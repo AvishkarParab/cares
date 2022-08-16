@@ -173,7 +173,7 @@ body{
 }
 .tabs input::placeholder{
     color:#a8a7a78e;
-    content: "hhh";
+    content: "";
 }
 .post{
     border:1px solid #a8a7a78e;
