@@ -62,9 +62,9 @@ body{
     border-radius: 10px;
     border: 1px solid #a8a7a78e;
     width: 300px;
-    /* margin-right:15px; */
-    min-height: 400px;
+    height: max-content;
     padding: 20px 10px;
+    margin-bottom: 20px;
 }
 .blog h5{
     margin-top: 10px;
@@ -76,6 +76,8 @@ body{
     list-style: none;
     margin-bottom: 20px;
     padding-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
 
 }
 .blist li img{
@@ -87,19 +89,25 @@ body{
 .textCont{
     padding-right: 5px;
 }
+.blist li:hover{
+    transition: .2s all ease-in-out;
+    background-color: #a8a7a74f;
+}
 .blist li .text{
+    text-overflow:ellipsis;
+    width: 150px;
     height: 40px;
-    overflow-y: hidden;
+    overflow:hidden;
     font-size: 12px;
     font-weight: bold;
-
+   
 }
 .blist li .date{
+    line-height: 1px;
     font-size: 12px;
 }
 .activity{
     border-radius: 10px;
-    /* border: 1px solid #a8a7a78e; */
     width: 540px;
     margin-right: 5px;
     min-height: 400px;
@@ -173,13 +181,14 @@ body{
 }
 .tabs input::placeholder{
     color:#a8a7a78e;
-    content: "";
+    font-family:fontawesome;
+    letter-spacing: 1px;
 }
 .post{
     border:1px solid #a8a7a78e;
     border-radius: 10px;
     min-height: 300px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .timeline{
     padding: 10px 15px;
